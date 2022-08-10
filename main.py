@@ -1,4 +1,5 @@
 import telebot
+import os
 from extensions import APIException, Convertor
 from config import TOKEN, exchanges
 import traceback
@@ -8,7 +9,7 @@ exchanges = {
     'евро': 'EUR',
     'рубль': 'RUB'
 }
-TOKEN = "5512817425:AAEmi8CiLDVJiUSmLyAaPf5ILlh6GXLBUhM"
+TOKEN = os.getenv('API_BOT_TOKEN')
 
 bot = telebot.TeleBot(TOKEN)
 
