@@ -1,4 +1,4 @@
-TOKEN = "5512817425:AAEmi8CiLDVJiUSmLyAaPf5ILlh6GXLBUhM"
+TOKEN = os.getenv('API_BOT_TOKEN')
 exchanges = {
     'доллар': 'USD',
     'евро': 'EUR',
